@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Demostración de Output</title>
+</head>
+
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+    <button id="btnSaludo">Mostrar Saludo</button>
+
+    <p id="parrafo"></p>
+    <button id="btnActualizar">Actualizar Texto</button>
+
+    <script>
+        // Mensaje de saludo en consola al cargar la página
+        console.log('¡Bienvenido! Esta página demuestra la funcionalidad de output en JavaScript.');
+
+        // Botón de saludo con alert
+        document.getElementById('btnSaludo').addEventListener('click', function () {
+            alert('Alberto');
+        });
+
+        // Botón para actualizar párrafo
+        document.getElementById('btnActualizar').addEventListener('click', function () {
+            document.getElementById('parrafo').textContent = '¡Texto actualizado con Javascript!';
+        });
+    </script>
+</body>
+
+</html>

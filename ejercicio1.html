@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Actualizar Párrafo</title>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <p id="parrafo"></p>
+    <button id="btnActualizar">Actualizar Texto</button>
+
+    <script>
+        document.getElementById('btnActualizar').addEventListener('click', function () {
+            document.getElementById('parrafo').textContent = '¡Texto actualizado con Javascript!';
+        });
+    </script>
+</body>
+
+</html>
